@@ -10,4 +10,42 @@ public class Llanta {
         this.grosor = grosor;
         this.labrado = labrado;
     }
+
+    public int getRin() {
+        return rin;
+    }
+
+    public void setRin(int rin) {
+        this.rin = rin;
+    }
+
+    public double getGrosor() {
+        return grosor;
+    }
+
+    public void setGrosor(double grosor) {
+        this.grosor = grosor;
+    }
+
+    public char getLabrado() {
+        return labrado;
+    }
+
+    public void setLabrado(char labrado) {
+        this.labrado = labrado;
+    }
+
+    public String inLlanta(){
+        return "La llana tiene un rin de " + this.rin +
+                ", un labrado de " + this.labrado +
+                " y un grosor de " + this.grosor;
+    }
+
+    public void imprimir(){
+        System.out.println("La llana tiene un rin de " + this.rin +
+                ", un labrado de " + this.labrado +
+                " y un grosor de " + this.grosor);
+    }
+
+
 }
