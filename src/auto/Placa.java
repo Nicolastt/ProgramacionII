@@ -1,2 +1,5 @@
-package auto;public class Placa {
+package auto;
+
+public class Placa {
+
 }

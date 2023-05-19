@@ -1,2 +1,7 @@
-package auto;public class Moqueta {
+package auto;
+
+public class Moqueta {
+    private String material;
+    private String ubicacion;
+
 }
