@@ -22,9 +22,5 @@ public class TestAuto {
         llanta1.inLlanta(); // -> No imprime nada
         System.out.println("---------- INLLANTA ----------");
         llanta1.imprimir(); // -> Imprime sí o sí
-
-
-
-
     }
 }

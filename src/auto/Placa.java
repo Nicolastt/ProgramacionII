@@ -18,4 +18,8 @@ public class Placa {
         this.idLetra = idLetra;
         this.idNumero = idNumero;
     }
+
+    public String imprimirPlaca(){
+        return String.format("Placa: %c%s-%s",this.provincia,this.idLetra,this.idNumero);
+    }
 }
