@@ -14,6 +14,7 @@ public class TestEnlaceFuerte {
 
         // System.out.println(auto.getTipoLlanta().imprimirLlanta());
         auto = null;
+        System.out.println(llanta.imprimirLlanta());
         //System.out.println(auto.getTipoLlanta().imprimirLlanta());
 
         /*
