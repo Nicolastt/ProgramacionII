@@ -1,5 +1,6 @@
 package tests;
 
+import auto.Auto;
 import auto.Llanta;
 import auto.Moqueta;
 import auto.Placa;

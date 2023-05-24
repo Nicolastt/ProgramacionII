@@ -3,7 +3,7 @@ package auto;
 public class Llanta {
     private int rin;
     private double grosor;
-    private  char labrado;
+    private char labrado;
 
     public Llanta(int rin, double grosor, char labrado) {
         this.rin = rin;
@@ -35,16 +35,9 @@ public class Llanta {
         this.labrado = labrado;
     }
 
-    public String inLlanta(){
-        return String.format("La llanta tiene un ring de %d, un grosor de %.2f y un labrado de %c",this.rin,
+    public String imprimirLlanta() {
+        return String.format("La llanta tiene un ring de %d, un grosor de %.2f y un labrado de %c", this.rin,
                 this.grosor, this.labrado);
     }
-
-    public void imprimir(){
-        System.out.println("La llana tiene un rin de " + this.rin +
-                ", un labrado de " + this.labrado +
-                " y un grosor de " + this.grosor);
-    }
-
 
 }

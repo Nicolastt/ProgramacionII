@@ -18,9 +18,9 @@ public class TestAuto {
         llanta1.setRin(1);
         System.out.println("El nuevo número de rin de mi llanta es: " + llanta1.getRin());
         System.out.println("---------- INLLANTA ----------");
-        //System.out.println(llanta1.inLlanta()); // -> Necesita el sout para imprimir.
-        llanta1.inLlanta(); // -> No imprime nada
+        //System.out.println(llanta1.imprimirLlanta()); // -> Necesita el sout para imprimir.
+        llanta1.imprimirLlanta(); // -> No imprime nada
         System.out.println("---------- INLLANTA ----------");
-        llanta1.imprimir(); // -> Imprime sí o sí
+        llanta1.imprimirLlanta(); // -> Imprime sí o sí
     }
 }
