@@ -1,5 +1,5 @@
 package auto;
 
 public class Conductor {
-    private String cedula;
+    private Cedula cedula;
 }
