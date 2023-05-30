@@ -28,7 +28,6 @@ public final class Cedula {
         this.codigoDactilar = codigoDactilar;
         this.identificador = ++numeroDeCedulas;
         System.out.printf("Hay %d cédulas%n", numeroDeCedulas);
-
     }
 
 
