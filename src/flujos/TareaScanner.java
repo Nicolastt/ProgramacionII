@@ -10,6 +10,9 @@ public class TareaScanner {
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.ENGLISH);
 
+        Scanner scanner2 = new Scanner(System.in);
+        scanner.useLocale(Locale.ENGLISH);
+
         System.out.println("Ingrese la fecha separada por un espacio: ");
         String fecha = scanner.nextLine(); // Leer la línea completa
         String[] fechaArr = fecha.split("[ ,]+"); // Dividir la cadena utilizando espacios y comas
@@ -21,7 +24,7 @@ public class TareaScanner {
         String nombre = scanner.next();
 
         DecimalFormatSymbols decimalFormatSymbols = new DecimalFormatSymbols(Locale.ENGLISH);
-        DecimalFormat decimalFormat = new DecimalFormat("#.##", decimalFormatSymbols);
+        DecimalFormat decimalFormat = new DecimalFormat("##.##", decimalFormatSymbols);
         double peso = Double.parseDouble(scanner.next().replace(',', '.')); // Reemplazar la coma por el punto y convertir a double
 
         scanner.nextLine(); // ? Limpiar el Buffer
@@ -32,10 +35,16 @@ public class TareaScanner {
         System.out.println("Ingrese el país de origen: ");
         String pais = scanner.nextLine();
 
-
         System.out.printf("Hoy es %d/%d/%d%n", dia, mes, year);
         System.out.printf("%s pesa %s y vive en %s%n", nombre, decimalFormat.format(peso), pais);
 
-        System.out.println(fechaArr[1]);
+
+        // ! scanner.close();
+        // * Si se cierra un Scanner y se trata de llamar al otro no funciona porque
+        // * cuando utilizo el close estoy restringiendo el uso del System.in para todos.
+
+        System.out.println("Ingrese su saludo: ");
+        String saludo = scanner2.nextLine();
+        System.out.printf("Su saludo es: %s%n", saludo);
     }
 }
