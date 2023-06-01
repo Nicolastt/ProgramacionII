@@ -43,6 +43,7 @@ public class TareaScanner {
         // * Si se cierra un Scanner y se trata de llamar al otro no funciona porque
         // * cuando utilizo el close estoy restringiendo el uso del System.in para todos.
         // * De igual manera restrinjo el uso del buffer.
+        // ? Es recomendable tener un solo scanner
 
         System.out.println("Ingrese su saludo: ");
         String saludo = scanner2.nextLine();
