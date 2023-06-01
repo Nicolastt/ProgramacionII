@@ -20,8 +20,5 @@ public class EjemploScanner2 {
 
         System.out.println(String.format("Hoy es %d:%d:%d",dia,mes,year));
         System.out.println(String.format("%s pesa %.2f",nombre,peso));
-
-
-
     }
 }
